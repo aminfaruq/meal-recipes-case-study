@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		83129D8E290F86F80003CF78 /* Meal_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83129D85290F86F80003CF78 /* Meal_Recipes.framework */; };
-		83129D93290F86F80003CF78 /* Meal_RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129D92290F86F80003CF78 /* Meal_RecipesTests.swift */; };
 		83129D94290F86F80003CF78 /* Meal_Recipes.h in Headers */ = {isa = PBXBuildFile; fileRef = 83129D88290F86F80003CF78 /* Meal_Recipes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83129DA1290F87480003CF78 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DA0290F87480003CF78 /* HTTPClient.swift */; };
 		83129DA4290F87D80003CF78 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DA3290F87D80003CF78 /* URLSessionHTTPClient.swift */; };
@@ -17,6 +16,14 @@
 		83129DAF290F88940003CF78 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DAC290F88940003CF78 /* SharedTestHelpers.swift */; };
 		83129DB0290F88940003CF78 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DAD290F88940003CF78 /* SharedLocalizationTestHelpers.swift */; };
 		83129DB1290F88940003CF78 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DAE290F88940003CF78 /* XCTestCase+MemoryLeakTracking.swift */; };
+		83129DB4290F897E0003CF78 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DB3290F897E0003CF78 /* LoadResourcePresenter.swift */; };
+		83129DB6290F898C0003CF78 /* ResourceLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DB5290F898C0003CF78 /* ResourceLoadingViewModel.swift */; };
+		83129DB8290F89980003CF78 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DB7290F89980003CF78 /* ResourceLoadingView.swift */; };
+		83129DBA290F89A40003CF78 /* ResourceErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DB9290F89A40003CF78 /* ResourceErrorView.swift */; };
+		83129DBC290F89AE0003CF78 /* ResourceErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DBB290F89AE0003CF78 /* ResourceErrorViewModel.swift */; };
+		83129DBF290F8A530003CF78 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83129DC1290F8A530003CF78 /* Shared.strings */; };
+		83129DC5290F8ABB0003CF78 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DC4290F8ABB0003CF78 /* SharedLocalizationTests.swift */; };
+		83129DC7290F8AEB0003CF78 /* LoadResourcePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DC6290F8AEB0003CF78 /* LoadResourcePresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,6 @@
 		83129D85290F86F80003CF78 /* Meal_Recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Meal_Recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83129D88290F86F80003CF78 /* Meal_Recipes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal_Recipes.h; sourceTree = "<group>"; };
 		83129D8D290F86F80003CF78 /* Meal RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal RecipesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83129D92290F86F80003CF78 /* Meal_RecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_RecipesTests.swift; sourceTree = "<group>"; };
 		83129DA0290F87480003CF78 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		83129DA3290F87D80003CF78 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		83129DA7290F88240003CF78 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
@@ -41,6 +47,15 @@
 		83129DAC290F88940003CF78 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		83129DAD290F88940003CF78 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
 		83129DAE290F88940003CF78 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		83129DB3290F897E0003CF78 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
+		83129DB5290F898C0003CF78 /* ResourceLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingViewModel.swift; sourceTree = "<group>"; };
+		83129DB7290F89980003CF78 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
+		83129DB9290F89A40003CF78 /* ResourceErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorView.swift; sourceTree = "<group>"; };
+		83129DBB290F89AE0003CF78 /* ResourceErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorViewModel.swift; sourceTree = "<group>"; };
+		83129DC0290F8A530003CF78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
+		83129DC2290F8A730003CF78 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Shared.strings; sourceTree = "<group>"; };
+		83129DC4290F8ABB0003CF78 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
+		83129DC6290F8AEB0003CF78 /* LoadResourcePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +109,6 @@
 			children = (
 				83129DAB290F88940003CF78 /* Helpers */,
 				83129D9D290F87230003CF78 /* Shared */,
-				83129D92290F86F80003CF78 /* Meal_RecipesTests.swift */,
 			);
 			path = "Meal RecipesTests";
 			sourceTree = "<group>";
@@ -102,6 +116,7 @@
 		83129D9D290F87230003CF78 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				83129DC3290F8AA20003CF78 /* Shared Presentation */,
 				83129DA5290F88050003CF78 /* Shared API Infra */,
 			);
 			path = Shared;
@@ -110,6 +125,7 @@
 		83129D9E290F87290003CF78 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				83129DB2290F89670003CF78 /* Shared Presentation */,
 				83129DA2290F87B80003CF78 /* Shared API Infra */,
 				83129D9F290F87340003CF78 /* Shared API */,
 			);
@@ -157,6 +173,28 @@
 				83129DAE290F88940003CF78 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		83129DB2290F89670003CF78 /* Shared Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83129DB3290F897E0003CF78 /* LoadResourcePresenter.swift */,
+				83129DB5290F898C0003CF78 /* ResourceLoadingViewModel.swift */,
+				83129DB7290F89980003CF78 /* ResourceLoadingView.swift */,
+				83129DB9290F89A40003CF78 /* ResourceErrorView.swift */,
+				83129DBB290F89AE0003CF78 /* ResourceErrorViewModel.swift */,
+				83129DC1290F8A530003CF78 /* Shared.strings */,
+			);
+			path = "Shared Presentation";
+			sourceTree = "<group>";
+		};
+		83129DC3290F8AA20003CF78 /* Shared Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83129DC4290F8ABB0003CF78 /* SharedLocalizationTests.swift */,
+				83129DC6290F8AEB0003CF78 /* LoadResourcePresenterTest.swift */,
+			);
+			path = "Shared Presentation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +273,7 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 83129D7B290F86F80003CF78;
 			productRefGroup = 83129D86290F86F80003CF78 /* Products */;
@@ -252,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83129DBF290F8A530003CF78 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83129DB4290F897E0003CF78 /* LoadResourcePresenter.swift in Sources */,
+				83129DBA290F89A40003CF78 /* ResourceErrorView.swift in Sources */,
+				83129DBC290F89AE0003CF78 /* ResourceErrorViewModel.swift in Sources */,
 				83129DA1290F87480003CF78 /* HTTPClient.swift in Sources */,
+				83129DB8290F89980003CF78 /* ResourceLoadingView.swift in Sources */,
 				83129DA4290F87D80003CF78 /* URLSessionHTTPClient.swift in Sources */,
+				83129DB6290F898C0003CF78 /* ResourceLoadingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83129DAF290F88940003CF78 /* SharedTestHelpers.swift in Sources */,
+				83129DC5290F8ABB0003CF78 /* SharedLocalizationTests.swift in Sources */,
 				83129DB0290F88940003CF78 /* SharedLocalizationTestHelpers.swift in Sources */,
-				83129D93290F86F80003CF78 /* Meal_RecipesTests.swift in Sources */,
+				83129DC7290F8AEB0003CF78 /* LoadResourcePresenterTest.swift in Sources */,
 				83129DAA290F88410003CF78 /* URLSessionHTTPClientTests.swift in Sources */,
 				83129DA8290F88240003CF78 /* URLProtocolStub.swift in Sources */,
 				83129DB1290F88940003CF78 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
@@ -297,11 +343,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		83129DC1290F8A530003CF78 /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83129DC0290F8A530003CF78 /* en */,
+				83129DC2290F8A730003CF78 /* id */,
+			);
+			name = Shared.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		83129D95290F86F80003CF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -365,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
