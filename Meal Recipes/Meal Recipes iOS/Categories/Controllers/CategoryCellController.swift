@@ -84,5 +84,4 @@ extension CategoryCellController: ResourceView, ResourceLoadingView, ResourceErr
     public func display(_ viewModel: ResourceErrorViewModel) {
         cell?.categoryRetryButton.isHidden = viewModel.message == nil
     }
-    
 }
