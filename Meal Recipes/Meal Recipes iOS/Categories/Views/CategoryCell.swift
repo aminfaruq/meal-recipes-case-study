@@ -7,10 +7,12 @@
 
 import UIKit
 
-class CategoryCell: UICollectionViewCell {
+class CategoryCell: UITableViewCell {
     @IBOutlet private(set) public var categoryNameLabel: UILabel!
+    @IBOutlet private(set) public var categoryDescriptionLabel: UILabel!
     @IBOutlet private(set) public var categoryImage: UIImageView!
     @IBOutlet private(set) public var categoryRetryButton: UIButton!
+    @IBOutlet private(set) public var categoryImageContainer: UIView!
 
     var onRetry: (() -> Void)?
 

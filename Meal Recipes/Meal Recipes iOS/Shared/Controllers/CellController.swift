@@ -10,15 +10,15 @@ import Meal_Recipes
 
 public struct CellController {
     let id: AnyHashable
-    let dataSource: UICollectionViewDataSource
-    let delegate: UICollectionViewDelegate?
-    let dataSourcePrefetching: UICollectionViewDataSourcePrefetching?
+    let dataSource: UITableViewDataSource
+    let delegate: UITableViewDelegate?
+    let dataSourcePrefetching: UITableViewDataSourcePrefetching?
     
-    public init(id: AnyHashable, _ dataSource: UICollectionViewDataSource) {
+    public init(id: AnyHashable, _ dataSource: UITableViewDataSource) {
         self.id = id
         self.dataSource = dataSource
-        self.delegate = dataSource as? UICollectionViewDelegate
-        self.dataSourcePrefetching = dataSource as? UICollectionViewDataSourcePrefetching
+        self.delegate = dataSource as? UITableViewDelegate
+        self.dataSourcePrefetching = dataSource as? UITableViewDataSourcePrefetching
     }
 }
 

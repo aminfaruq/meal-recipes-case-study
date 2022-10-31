@@ -30,33 +30,35 @@ public class CategoryCellController: NSObject {
     }
 }
 
-extension CategoryCellController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDataSourcePrefetching{
+extension CategoryCellController: UITableViewDataSource, UITableViewDelegate, UITableViewDataSourcePrefetching  {
     
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { 1 }
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 1 }
     
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        cell =  collectionView.dequeueReusableCell(indexPath: indexPath)
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        cell = tableView.dequeueReusableCell()
         cell?.categoryNameLabel.text = viewModel.strCategory
+        cell?.categoryDescriptionLabel.text = viewModel.strCategoryDescription
         cell?.categoryImage.image = nil
         cell?.onRetry = { [weak self] in
             self?.delegate.didRequestImage()
         }
+        delegate.didRequestImage()
         return cell!
     }
     
-    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selection()
     }
     
-    public func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cancelLoad()
     }
     
-    public func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+    public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         delegate.didRequestImage()
     }
     
-    public func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
+    public func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
         cancelLoad()
     }
     
@@ -76,12 +78,11 @@ extension CategoryCellController: ResourceView, ResourceLoadingView, ResourceErr
     }
     
     public func display(_ viewModel: ResourceLoadingViewModel) {
-        //MARK: - DO MORE
+        cell?.categoryImageContainer.isShimmering = viewModel.isLoading
     }
     
     public func display(_ viewModel: ResourceErrorViewModel) {
         cell?.categoryRetryButton.isHidden = viewModel.message == nil
     }
-    
     
 }
