@@ -12,15 +12,11 @@ public struct CategoriesViewModel {
 }
 
 public struct CategoryViewModel {
-    public let idCategory: String
-    public let strCategory: String
-    public let strCategoryThumb: String
-    public let strCategoryDescription: String
+    public let strCategory: String?
+    public let strCategoryDescription: String?
     
-    public init(idCategory: String, strCategory: String, strCategoryThumb: String, strCategoryDescription: String) {
-        self.idCategory = idCategory
+    public init(strCategory: String?, strCategoryDescription: String?) {
         self.strCategory = strCategory
-        self.strCategoryThumb = strCategoryThumb
         self.strCategoryDescription = strCategoryDescription
     }
 }
