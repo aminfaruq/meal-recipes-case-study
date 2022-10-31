@@ -31,6 +31,9 @@
 		83129DD7290F95A50003CF78 /* CategoriesMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */; };
 		83129DD9290F9B750003CF78 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD8290F9B750003CF78 /* CategoriesViewModel.swift */; };
 		83129DDB290F9C710003CF78 /* CategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DDA290F9C710003CF78 /* CategoriesPresenter.swift */; };
+		83129DE9290F9DE50003CF78 /* Meal_Recipes_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83129DE1290F9DE40003CF78 /* Meal_Recipes_iOS.framework */; };
+		83129DEE290F9DE50003CF78 /* Meal_Recipes_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DED290F9DE50003CF78 /* Meal_Recipes_iOSTests.swift */; };
+		83129DEF290F9DE50003CF78 /* Meal_Recipes_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 83129DE3290F9DE40003CF78 /* Meal_Recipes_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 83129D84290F86F80003CF78;
 			remoteInfo = "Meal Recipes";
+		};
+		83129DEA290F9DE50003CF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83129D7C290F86F80003CF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83129DE0290F9DE40003CF78;
+			remoteInfo = "Meal Recipes iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,6 +80,10 @@
 		83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesMapperTest.swift; sourceTree = "<group>"; };
 		83129DD8290F9B750003CF78 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		83129DDA290F9C710003CF78 /* CategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPresenter.swift; sourceTree = "<group>"; };
+		83129DE1290F9DE40003CF78 /* Meal_Recipes_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Meal_Recipes_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83129DE3290F9DE40003CF78 /* Meal_Recipes_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal_Recipes_iOS.h; sourceTree = "<group>"; };
+		83129DE8290F9DE50003CF78 /* Meal Recipes iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal Recipes iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83129DED290F9DE50003CF78 /* Meal_Recipes_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_Recipes_iOSTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83129DDE290F9DE40003CF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83129DE5290F9DE50003CF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83129DE9290F9DE50003CF78 /* Meal_Recipes_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +125,8 @@
 			children = (
 				83129D87290F86F80003CF78 /* Meal Recipes */,
 				83129D91290F86F80003CF78 /* Meal RecipesTests */,
+				83129DE2290F9DE40003CF78 /* Meal Recipes iOS */,
+				83129DEC290F9DE50003CF78 /* Meal Recipes iOSTests */,
 				83129D86290F86F80003CF78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +136,8 @@
 			children = (
 				83129D85290F86F80003CF78 /* Meal_Recipes.framework */,
 				83129D8D290F86F80003CF78 /* Meal RecipesTests.xctest */,
+				83129DE1290F9DE40003CF78 /* Meal_Recipes_iOS.framework */,
+				83129DE8290F9DE50003CF78 /* Meal Recipes iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,6 +299,22 @@
 			path = "Categories API";
 			sourceTree = "<group>";
 		};
+		83129DE2290F9DE40003CF78 /* Meal Recipes iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83129DE3290F9DE40003CF78 /* Meal_Recipes_iOS.h */,
+			);
+			path = "Meal Recipes iOS";
+			sourceTree = "<group>";
+		};
+		83129DEC290F9DE50003CF78 /* Meal Recipes iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				83129DED290F9DE50003CF78 /* Meal_Recipes_iOSTests.swift */,
+			);
+			path = "Meal Recipes iOSTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -274,6 +323,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				83129D94290F86F80003CF78 /* Meal_Recipes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83129DDC290F9DE40003CF78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83129DEF290F9DE50003CF78 /* Meal_Recipes_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +373,42 @@
 			productReference = 83129D8D290F86F80003CF78 /* Meal RecipesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83129DE0290F9DE40003CF78 /* Meal Recipes iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83129DF0290F9DE50003CF78 /* Build configuration list for PBXNativeTarget "Meal Recipes iOS" */;
+			buildPhases = (
+				83129DDC290F9DE40003CF78 /* Headers */,
+				83129DDD290F9DE40003CF78 /* Sources */,
+				83129DDE290F9DE40003CF78 /* Frameworks */,
+				83129DDF290F9DE40003CF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meal Recipes iOS";
+			productName = "Meal Recipes iOS";
+			productReference = 83129DE1290F9DE40003CF78 /* Meal_Recipes_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83129DE7290F9DE50003CF78 /* Meal Recipes iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83129DF3290F9DE50003CF78 /* Build configuration list for PBXNativeTarget "Meal Recipes iOSTests" */;
+			buildPhases = (
+				83129DE4290F9DE50003CF78 /* Sources */,
+				83129DE5290F9DE50003CF78 /* Frameworks */,
+				83129DE6290F9DE50003CF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83129DEB290F9DE50003CF78 /* PBXTargetDependency */,
+			);
+			name = "Meal Recipes iOSTests";
+			productName = "Meal Recipes iOSTests";
+			productReference = 83129DE8290F9DE50003CF78 /* Meal Recipes iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,6 +424,12 @@
 						LastSwiftMigration = 1400;
 					};
 					83129D8C290F86F80003CF78 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					83129DE0290F9DE40003CF78 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					83129DE7290F9DE50003CF78 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -351,6 +450,8 @@
 			targets = (
 				83129D84290F86F80003CF78 /* Meal Recipes */,
 				83129D8C290F86F80003CF78 /* Meal RecipesTests */,
+				83129DE0290F9DE40003CF78 /* Meal Recipes iOS */,
+				83129DE7290F9DE50003CF78 /* Meal Recipes iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -365,6 +466,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		83129D8B290F86F80003CF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83129DDF290F9DE40003CF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83129DE6290F9DE50003CF78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,6 +524,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83129DDD290F9DE40003CF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83129DE4290F9DE50003CF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83129DEE290F9DE50003CF78 /* Meal_Recipes_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -416,6 +546,11 @@
 			isa = PBXTargetDependency;
 			target = 83129D84290F86F80003CF78 /* Meal Recipes */;
 			targetProxy = 83129D8F290F86F80003CF78 /* PBXContainerItemProxy */;
+		};
+		83129DEB290F9DE50003CF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83129DE0290F9DE40003CF78 /* Meal Recipes iOS */;
+			targetProxy = 83129DEA290F9DE50003CF78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -644,6 +779,92 @@
 			};
 			name = Release;
 		};
+		83129DF1290F9DE50003CF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WZB5R9B92Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.id.aminfaruq.Meal-Recipes-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83129DF2290F9DE50003CF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WZB5R9B92Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.id.aminfaruq.Meal-Recipes-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		83129DF4290F9DE50003CF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZB5R9B92Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.id.aminfaruq.Meal-Recipes-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83129DF5290F9DE50003CF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZB5R9B92Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.id.aminfaruq.Meal-Recipes-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -670,6 +891,24 @@
 			buildConfigurations = (
 				83129D9B290F86F80003CF78 /* Debug */,
 				83129D9C290F86F80003CF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83129DF0290F9DE50003CF78 /* Build configuration list for PBXNativeTarget "Meal Recipes iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83129DF1290F9DE50003CF78 /* Debug */,
+				83129DF2290F9DE50003CF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83129DF3290F9DE50003CF78 /* Build configuration list for PBXNativeTarget "Meal Recipes iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83129DF4290F9DE50003CF78 /* Debug */,
+				83129DF5290F9DE50003CF78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
