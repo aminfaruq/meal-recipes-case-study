@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "83129DE0290F9DE40003CF78"
+               BlueprintIdentifier = "8366AC6C290FAF6A006B2ECC"
                BuildableName = "Meal_Recipes_iOS.framework"
                BlueprintName = "Meal Recipes iOS"
                ReferencedContainer = "container:Meal Recipes.xcodeproj">
@@ -32,7 +32,7 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "83129DE0290F9DE40003CF78"
+            BlueprintIdentifier = "8366AC6C290FAF6A006B2ECC"
             BuildableName = "Meal_Recipes_iOS.framework"
             BlueprintName = "Meal Recipes iOS"
             ReferencedContainer = "container:Meal Recipes.xcodeproj">
@@ -44,7 +44,7 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "83129DE7290F9DE50003CF78"
+               BlueprintIdentifier = "8366AC73290FAF6A006B2ECC"
                BuildableName = "Meal Recipes iOSTests.xctest"
                BlueprintName = "Meal Recipes iOSTests"
                ReferencedContainer = "container:Meal Recipes.xcodeproj">
@@ -72,7 +72,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "83129DE0290F9DE40003CF78"
+            BlueprintIdentifier = "8366AC6C290FAF6A006B2ECC"
             BuildableName = "Meal_Recipes_iOS.framework"
             BlueprintName = "Meal Recipes iOS"
             ReferencedContainer = "container:Meal Recipes.xcodeproj">
