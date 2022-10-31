@@ -45,13 +45,13 @@ class CategoriesMapperTest: XCTestCase {
     
     func test_map_deliversItemsOn2xxHTTPResponseWithJSONItems() throws {
         let item1 = makeItem(
-            idCategory: UUID(),
+            idCategory: String(),
             strCategory: "a message",
             strCategoryThumb: "",
             strCategoryDescription: "a username")
         
         let item2 = makeItem(
-            idCategory: UUID(),
+            idCategory: String(),
             strCategory: "another message",
             strCategoryThumb: "2020-01-01T12:31:22+00:00",
             strCategoryDescription: "")
@@ -69,12 +69,12 @@ class CategoriesMapperTest: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeItem(idCategory: UUID, strCategory: String, strCategoryThumb: String, strCategoryDescription: String) -> (model: RemoteCategory, json: [String: Any]) {
+    private func makeItem(idCategory: String, strCategory: String, strCategoryThumb: String, strCategoryDescription: String) -> (model: RemoteCategory, json: [String: Any]) {
         
         let item = RemoteCategory(idCategory: idCategory, strCategory: strCategory, strCategoryThumb: strCategoryThumb, strCategoryDescription: strCategoryDescription)
         
         let json: [String: Any] = [
-            "idCategory": idCategory.uuidString,
+            "idCategory": idCategory,
             "strCategory": strCategory,
             "strCategoryThumb": strCategoryThumb,
             "strCategoryDescription": strCategoryDescription

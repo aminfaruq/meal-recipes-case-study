@@ -29,6 +29,8 @@
 		83129DD1290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD0290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift */; };
 		83129DD3290F93690003CF78 /* RemoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD2290F93690003CF78 /* RemoteCategory.swift */; };
 		83129DD7290F95A50003CF78 /* CategoriesMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */; };
+		83129DD9290F9B750003CF78 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD8290F9B750003CF78 /* CategoriesViewModel.swift */; };
+		83129DDB290F9C710003CF78 /* CategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DDA290F9C710003CF78 /* CategoriesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		83129DD0290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		83129DD2290F93690003CF78 /* RemoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCategory.swift; sourceTree = "<group>"; };
 		83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesMapperTest.swift; sourceTree = "<group>"; };
+		83129DD8290F9B750003CF78 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		83129DDA290F9C710003CF78 /* CategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,8 @@
 		83129DCB290F901D0003CF78 /* Categories Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				83129DD8290F9B750003CF78 /* CategoriesViewModel.swift */,
+				83129DDA290F9C710003CF78 /* CategoriesPresenter.swift */,
 			);
 			path = "Categories Presentation";
 			sourceTree = "<group>";
@@ -382,6 +388,8 @@
 				83129DA1290F87480003CF78 /* HTTPClient.swift in Sources */,
 				83129DB8290F89980003CF78 /* ResourceLoadingView.swift in Sources */,
 				83129DA4290F87D80003CF78 /* URLSessionHTTPClient.swift in Sources */,
+				83129DDB290F9C710003CF78 /* CategoriesPresenter.swift in Sources */,
+				83129DD9290F9B750003CF78 /* CategoriesViewModel.swift in Sources */,
 				83129DB6290F898C0003CF78 /* ResourceLoadingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

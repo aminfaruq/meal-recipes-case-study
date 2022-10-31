@@ -13,7 +13,7 @@ public final class CategoriesMapper {
         private let categories: [Categories]
         
         private struct Categories: Decodable {
-            let idCategory: UUID
+            let idCategory: String
             let strCategory: String
             let strCategoryThumb: String
             let strCategoryDescription: String
