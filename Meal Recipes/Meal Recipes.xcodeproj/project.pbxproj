@@ -24,6 +24,11 @@
 		83129DBF290F8A530003CF78 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83129DC1290F8A530003CF78 /* Shared.strings */; };
 		83129DC5290F8ABB0003CF78 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DC4290F8ABB0003CF78 /* SharedLocalizationTests.swift */; };
 		83129DC7290F8AEB0003CF78 /* LoadResourcePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DC6290F8AEB0003CF78 /* LoadResourcePresenterTest.swift */; };
+		83129DCD290F905A0003CF78 /* CategoriesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DCC290F905A0003CF78 /* CategoriesEndPoint.swift */; };
+		83129DCF290F90950003CF78 /* CategoriesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DCE290F90950003CF78 /* CategoriesMapper.swift */; };
+		83129DD1290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD0290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift */; };
+		83129DD3290F93690003CF78 /* RemoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD2290F93690003CF78 /* RemoteCategory.swift */; };
+		83129DD7290F95A50003CF78 /* CategoriesMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		83129DC2290F8A730003CF78 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Shared.strings; sourceTree = "<group>"; };
 		83129DC4290F8ABB0003CF78 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 		83129DC6290F8AEB0003CF78 /* LoadResourcePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTest.swift; sourceTree = "<group>"; };
+		83129DCC290F905A0003CF78 /* CategoriesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEndPoint.swift; sourceTree = "<group>"; };
+		83129DCE290F90950003CF78 /* CategoriesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesMapper.swift; sourceTree = "<group>"; };
+		83129DD0290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		83129DD2290F93690003CF78 /* RemoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCategory.swift; sourceTree = "<group>"; };
+		83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesMapperTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				83129D9E290F87290003CF78 /* Shared */,
+				83129DC8290F8B4E0003CF78 /* Category */,
 				83129D88290F86F80003CF78 /* Meal_Recipes.h */,
 			);
 			path = "Meal Recipes";
@@ -109,6 +120,7 @@
 			children = (
 				83129DAB290F88940003CF78 /* Helpers */,
 				83129D9D290F87230003CF78 /* Shared */,
+				83129DD4290F95320003CF78 /* Category */,
 			);
 			path = "Meal RecipesTests";
 			sourceTree = "<group>";
@@ -195,6 +207,57 @@
 				83129DC6290F8AEB0003CF78 /* LoadResourcePresenterTest.swift */,
 			);
 			path = "Shared Presentation";
+			sourceTree = "<group>";
+		};
+		83129DC8290F8B4E0003CF78 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				83129DC9290F8FF90003CF78 /* Categories API */,
+				83129DCB290F901D0003CF78 /* Categories Presentation */,
+				83129DCA290F900A0003CF78 /* Categories Feature */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		83129DC9290F8FF90003CF78 /* Categories API */ = {
+			isa = PBXGroup;
+			children = (
+				83129DCC290F905A0003CF78 /* CategoriesEndPoint.swift */,
+				83129DCE290F90950003CF78 /* CategoriesMapper.swift */,
+				83129DD0290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift */,
+			);
+			path = "Categories API";
+			sourceTree = "<group>";
+		};
+		83129DCA290F900A0003CF78 /* Categories Feature */ = {
+			isa = PBXGroup;
+			children = (
+				83129DD2290F93690003CF78 /* RemoteCategory.swift */,
+			);
+			path = "Categories Feature";
+			sourceTree = "<group>";
+		};
+		83129DCB290F901D0003CF78 /* Categories Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Categories Presentation";
+			sourceTree = "<group>";
+		};
+		83129DD4290F95320003CF78 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				83129DD5290F956A0003CF78 /* Categories API */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		83129DD5290F956A0003CF78 /* Categories API */ = {
+			isa = PBXGroup;
+			children = (
+				83129DD6290F95A50003CF78 /* CategoriesMapperTest.swift */,
+			);
+			path = "Categories API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +374,11 @@
 			files = (
 				83129DB4290F897E0003CF78 /* LoadResourcePresenter.swift in Sources */,
 				83129DBA290F89A40003CF78 /* ResourceErrorView.swift in Sources */,
+				83129DD1290F918D0003CF78 /* HTTPURLResponse+StatusCode.swift in Sources */,
+				83129DCD290F905A0003CF78 /* CategoriesEndPoint.swift in Sources */,
+				83129DCF290F90950003CF78 /* CategoriesMapper.swift in Sources */,
 				83129DBC290F89AE0003CF78 /* ResourceErrorViewModel.swift in Sources */,
+				83129DD3290F93690003CF78 /* RemoteCategory.swift in Sources */,
 				83129DA1290F87480003CF78 /* HTTPClient.swift in Sources */,
 				83129DB8290F89980003CF78 /* ResourceLoadingView.swift in Sources */,
 				83129DA4290F87D80003CF78 /* URLSessionHTTPClient.swift in Sources */,
@@ -323,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83129DD7290F95A50003CF78 /* CategoriesMapperTest.swift in Sources */,
 				83129DAF290F88940003CF78 /* SharedTestHelpers.swift in Sources */,
 				83129DC5290F8ABB0003CF78 /* SharedLocalizationTests.swift in Sources */,
 				83129DB0290F88940003CF78 /* SharedLocalizationTestHelpers.swift in Sources */,
