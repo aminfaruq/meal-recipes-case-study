@@ -15,7 +15,7 @@ public final class CategoriesMapper {
         private struct Categories: Decodable {
             let idCategory: String
             let strCategory: String
-            let strCategoryThumb: String
+            let strCategoryThumb: URL
             let strCategoryDescription: String
         }
         
