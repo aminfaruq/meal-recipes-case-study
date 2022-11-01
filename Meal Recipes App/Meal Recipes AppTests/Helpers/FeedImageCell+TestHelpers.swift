@@ -1,39 +1,39 @@
+////
+////  FeedImageCell+TestHelpers.swift
+////  EssentialFeediOSTests
+////
+////  Created by Amin faruq on 19/09/22.
+////
 //
-//  FeedImageCell+TestHelpers.swift
-//  EssentialFeediOSTests
+//import UIKit
+//import Meal_Recipes_iOS
 //
-//  Created by Amin faruq on 19/09/22.
+//extension CategoryCellController {
+//    func simulateRetryAction() {
+//        isShowingRetryAction.simulateTap()
+//    }
 //
-
-import UIKit
-import Meal_Recipes_iOS
-
-extension FeedImageCell {
-    func simulateRetryAction() {
-        feedImageRetryButton.simulateTap()
-    }
-    
-    var isShowingLocation: Bool {
-        return !locationContainer.isHidden
-    }
-    
-    var isShowingImageLoadingIndicator: Bool {
-        return feedImageContainer.isShimmering
-    }
-    
-    var isShowingRetryAction: Bool {
-        return !feedImageRetryButton.isHidden
-    }
-    
-    var locationText: String? {
-        return locationLabel.text
-    }
-    
-    var descriptionText: String? {
-        return descriptionLabel.text
-    }
-    
-    var renderedImage: Data? {
-        return feedImageView.image?.pngData()
-    }
-}
+//    var isShowingLocation: Bool {
+//        return !locationContainer.isHidden
+//    }
+//
+//    var isShowingImageLoadingIndicator: Bool {
+//        return feedImageContainer.isShimmering
+//    }
+//
+//    var isShowingRetryAction: Bool {
+//        return !feedImageRetryButton.isHidden
+//    }
+//
+//    var locationText: String? {
+//        return locationLabel.text
+//    }
+//
+//    var descriptionText: String? {
+//        return descriptionLabel.text
+//    }
+//
+//    var renderedImage: Data? {
+//        return feedImageView.image?.pngData()
+//    }
+//}

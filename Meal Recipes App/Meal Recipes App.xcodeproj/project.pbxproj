@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830D4BE22910B4AE0039A2A7 /* SceneDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D4BE12910B4AE0039A2A7 /* SceneDelegateTest.swift */; };
 		838DE87129102953006C142D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838DE87029102953006C142D /* AppDelegate.swift */; };
 		838DE87329102953006C142D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838DE87229102953006C142D /* SceneDelegate.swift */; };
 		838DE87529102953006C142D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838DE87429102953006C142D /* ViewController.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		830D4BE12910B4AE0039A2A7 /* SceneDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTest.swift; sourceTree = "<group>"; };
 		838DE86D29102953006C142D /* Meal Recipes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Recipes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		838DE87029102953006C142D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838DE87229102953006C142D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				838DE89D291033C2006C142D /* Helpers */,
 				838DE892291029F7006C142D /* Meal_Recipes_AppTests.swift */,
 				838DE89E291033D9006C142D /* CategoriesUIIntegrationTests.swift */,
+				830D4BE12910B4AE0039A2A7 /* SceneDelegateTest.swift */,
 			);
 			path = "Meal Recipes AppTests";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				838DE8AD29103458006C142D /* UIImage+TestHelpers.swift in Sources */,
 				838DE8B429103458006C142D /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				838DE8B929103458006C142D /* UIView+TestHelpers.swift in Sources */,
+				830D4BE22910B4AE0039A2A7 /* SceneDelegateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
